@@ -1,0 +1,24 @@
+%nprocshared=32
+%mem=64GB
+#p opt=(calcfc,ts,noeigen) freq ub3lyp/genecp em=gd3bj
+
+Title
+
+0 6
+
+-C -H -O -N -P -S -Cl -F -Si -Na -B -Mg -K -Li -As -Se 0
+6-31g*
+****
+-Cu -Pd -I -Cr -Br -Ni -Ag -Au -Ru -Fe -W -Co -Rh -Ir 0
+SDD
+****
+
+-Cu -Pd -I -Cr -Br -Ni -Ag -Au -Ru -Fe -W -Co -Rh -Ir 0
+SDD
+
+
+
+
+
+
+
