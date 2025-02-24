@@ -8,6 +8,7 @@ for file in *.out; do
 
     # Extract the base name of the file to create the corresponding .com file.
     base_name="${file%.out}"
+    # change the ts suffix below to your desired file name suffix, like for single point, change it to sp
     output_file="${base_name}_ts.com"
 
     # Step 3: Identify the start and end lines for extraction.
@@ -41,6 +42,8 @@ for file in *.out; do
     # Step 5: Write the template and extracted coordinates into the .com file.
     {
         # Write the first seven lines of the template file.
+        # This depends on your input file format
+        # Number 7 usually includes lines of core, memory, keyword, note, charge and multiplicity info
         head -n 7 "$TEMPLATE_FILE"
 
         # Write the extracted coordinates.
